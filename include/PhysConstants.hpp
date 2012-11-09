@@ -1,3 +1,10 @@
+/*! \file PhysConstants.hpp
+ *  \brief A class to handle physical constants
+ *  \author S. V. Paulauskas
+ *  \date 09 November 2012
+ *  Copywrite S.V. Paulauskas
+ *  Published under GNU GPL v.3
+ */
 #include <map>
 #include <string>
 
