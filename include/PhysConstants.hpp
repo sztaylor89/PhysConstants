@@ -1,9 +1,13 @@
+/*
+* Copyright S.V. Paulauskas 2012
+* stanpaulauskas@gmail.com
+* Distributed under GNU General Public Licence v3
+*/
+
 /*! \file PhysConstants.hpp
  *  \brief A class to handle physical constants
- *  \author S. V. Paulauskas
+ *  \author S.V. Paulauskas
  *  \date 09 November 2012
- *  Copywrite S.V. Paulauskas
- *  Published under GNU GPL v.3
  */
 #include <map>
 #include <string>
