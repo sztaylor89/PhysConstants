@@ -17,8 +17,8 @@
 
 using namespace std;
 
-Constant PhysConstants::GetConstant(const std::string &name){
-    map<std::string, Constant>::iterator it = 
+Variable PhysConstants::GetConstant(const std::string &name){
+    map<std::string, Variable>::iterator it = 
         consts_.find(name);
     
     if(it == consts_.end()) {
@@ -31,7 +31,7 @@ Constant PhysConstants::GetConstant(const std::string &name){
 
 void PhysConstants::SetConstant(const std::string &name,  const double &val,
                  const double &error, const std::string &unit) {
-    consts_.insert(make_pair(name, Constant(val, error,unit)));
+    consts_.insert(make_pair(name, Variable(val, error,unit)));
 }
 
 void PhysConstants::Init(void){
@@ -71,7 +71,8 @@ void PhysConstants::Init(void){
     SetConstant("stephan-boltzmann", 5.670373e-8, 0.000021e-8, "W*m^-2*K^-4");
 }
 
-Constant::Constant(double value, double error, std::string units) {
+Variable::Variable(const double &value, const double &error, 
+                   const std::string &units){
     value_ = value;
     error_ = error;
     units_ = units;

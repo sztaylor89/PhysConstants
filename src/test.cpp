@@ -6,7 +6,7 @@ using namespace std;
 
 int main () {
     PhysConstants constants;
-    Constant electronCharge = constants.GetConstant("electronCharge");
+    Variable electronCharge = constants.GetConstant("electronCharge");
 
     double chg = constants.GetConstant("electronCharge").GetValue();
 

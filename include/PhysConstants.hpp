@@ -12,11 +12,12 @@
 #include <map>
 #include <string>
 
-class Constant {
+class Variable {
 public:
-    Constant(){};
-    Constant(double value, double error, std::string units);
-    ~Constant(){};
+    Variable(){};
+    Variable(const double &value, const double &error, 
+             const std::string &units);
+    ~Variable(){};
 
     double GetValue(void) {return(value_);};
     double GetError(void) {return(error_);};
@@ -31,12 +32,12 @@ public:
     PhysConstants() {Init();};
     ~PhysConstants(){};
     
-    Constant GetConstant(const std::string &name);
+    Variable GetConstant(const std::string &name);
 private:
     void Init(void);
     void SetConstant(const std::string &name,  const double &val,
                      const double &error, const std::string &unit);
 
-    std::map<std::string, Constant> consts_;
+    std::map<std::string, Variable> consts_;
 };//class PhysConstants
 
