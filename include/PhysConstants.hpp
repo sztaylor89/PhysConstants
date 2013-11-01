@@ -9,6 +9,8 @@
  *  \author S.V. Paulauskas
  *  \date 09 November 2012
  */
+#ifndef __PHYSCONSTANTS_HPP__
+#define __PHYSCONSTANTS_HPP__
 #include <map>
 #include <string>
 
@@ -40,4 +42,4 @@ private:
 
     std::map<std::string, Variable> consts_;
 };//class PhysConstants
-
+#endif //__PHYSCONSTANTS_HPP__
