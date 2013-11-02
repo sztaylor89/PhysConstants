@@ -11,6 +11,7 @@
  */
 #include <fstream>
 #include <iostream>
+
 #include <cmath>
 
 #include "PhysConstants.hpp"
@@ -69,11 +70,4 @@ void PhysConstants::Init(void){
     SetConstant("mu0", 4e-7*M_PI, 0.0, "V*s/(A*m)");
     SetConstant("rydberg", 1.0973731568539e7, 0.0000000000055e-7, "1/m");
     SetConstant("stephan-boltzmann", 5.670373e-8, 0.000021e-8, "W*m^-2*K^-4");
-}
-
-Variable::Variable(const double &value, const double &error, 
-                   const std::string &units){
-    value_ = value;
-    error_ = error;
-    units_ = units;
 }

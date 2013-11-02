@@ -14,20 +14,7 @@
 #include <map>
 #include <string>
 
-class Variable {
-public:
-    Variable(){};
-    Variable(const double &value, const double &error, 
-             const std::string &units);
-    ~Variable(){};
-
-    double GetValue(void) {return(value_);};
-    double GetError(void) {return(error_);};
-    std::string GetUnits(void) {return(units_);};
-private:
-    double value_, error_;
-    std::string units_;
-};
+#include <Variable.hpp>
 
 class PhysConstants {
 public:
