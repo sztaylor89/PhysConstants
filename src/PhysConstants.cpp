@@ -50,11 +50,14 @@ void PhysConstants::Init(void){
     SetConstant("tauMass", 1776.82, 0.16 , "MeV/c^2");
     SetConstant("tritonMass", 2808.921005, 0.000062, "MeV/c^2");
 
+    //Radii
+    SetConstant("bohrRadius", 0.52917721092e-10, 0.00000000017e-10, "m");
+    SetConstant("electronRadius", 2.8179403267e-15, 0.0000000027e-15, "m");
+
     //General
     SetConstant("angstromStar",1.00001495e-10, 0.00000090e-10, "m");
     SetConstant("avogadroNumber", 6.02214129e23, 0.00000027e23, "1/mol");
     SetConstant("bohrMagneton", 927.400968e-26, 0.000020e-26, "J/T");
-    SetConstant("bohrRadius", 0.52917721092e-10, 0.00000000017e-10, "m");
     SetConstant("boltzmann", 8.6173324e-5, 0.0000078e-5, "eV/K");
     SetConstant("c", 299792458, 0.0, "m/s");
     SetConstant("electronCharge", 1.602176565e-19, 3.5e-27,"C");

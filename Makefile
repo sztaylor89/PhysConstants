@@ -8,7 +8,7 @@ vpath %.o obj/
 
 #Set some paths to install the shared objects to
 SO_INSTALL_PATH = /home/vincent/programs/lib
-HEADER_INSTALL_PATH = /home/vincent/programs/include
+HEADER_INSTALL_PATH = /home/vincent/programs/inc
 
 #Set some of the compile options
 CXX = g++
